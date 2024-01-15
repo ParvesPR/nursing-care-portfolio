@@ -4,14 +4,20 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "sass": "sass ./sass/main.scss ./css/style.css",
-    "sass:watch": "sass --watch ./sass/main.scss ./css/style.css"
+    "build": "tailwindcss -i ./src/input.css -o ./public/style.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ParvesPR/nursing-care-portfolio.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ParvesPR/nursing-care-portfolio/issues"
+  },
+  "homepage": "https://github.com/ParvesPR/nursing-care-portfolio#readme",
   "devDependencies": {
-    "sass": "^1.69.7"
+    "tailwindcss": "^3.4.1"
   }
 }
