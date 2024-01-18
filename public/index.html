@@ -12,20 +12,23 @@
 
 <body>
     <!-- START HEADER SECTION -->
-    <header class="container w-10/12 mx-auto mt-10 p-5 shadow-lg flex items-center justify-between rounded-lg">
+    <header class="relative container w-10/12 mx-auto mt-10 p-5 shadow-lg flex items-center justify-between rounded-lg">
         <div>
             <a href="#"> <img class="w-36" src="../asset/logo.png" alt=""></a>
         </div>
         <nav>
-            <ul class="list-none text-sm">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About us</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Pages</a></li>
-                <li><a href="#">Contact us</a></li>
+            <button id="toggle-btn" class="block lg:hidden">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <ul id="navbar" class="hidden shadow-md lg:shadow-none lg:block bg-slate-50 lg:bg-transparent list-none absolute lg:relative text-sm p-5 w-full lg:w-auto left-0 mx-auto top-[85px] lg:top-[0px]">
+                <li class="block mb-3 lg:inline-block"><a href="#">Home</a></li>
+                <li class="block mb-3 lg:inline-block"><a href="#">About us</a></li>
+                <li class="block mb-3 lg:inline-block"><a href="#">Services</a></li>
+                <li class="block mb-3 lg:inline-block"><a href="#">Pages</a></li>
+                <li class="block mb-3 lg:inline-block"><a href="#">Contact us</a></li>
             </ul>
         </nav>
-        <div class="zvn">
+        <div class="hidden lg:block">
             <span class="mr-4 inline-block text-lg"><i class="fa-brands fa-facebook"></i></span>
             <span class="mr-4 inline-block text-lg"><i class="fa-brands fa-x-twitter"></i></span>
             <span class="mr-4 inline-block text-lg"><i class="fa-brands fa-youtube"></i></span>
@@ -34,6 +37,7 @@
     <!-- END HEADER SECTION -->
     <main></main>
     <footer></footer>
+    <script src="./script.js" type="module"></script>
 </body>
 
 </html>
