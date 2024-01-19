@@ -12,27 +12,39 @@
 
 <body>
     <!-- START HEADER SECTION -->
-    <header class="relative container w-10/12 mx-auto mt-10 p-5 shadow-lg flex items-center justify-between rounded-lg">
-        <div>
-            <a href="#"> <img class="w-36" src="../asset/logo.png" alt=""></a>
+    <header class="relative">
+        <div class="nav-container container lg:absolute w-11/12 m-auto bg-white p-4 shadow-lg flex items-center justify-between rounded-lg">
+            <div>
+                <a href="#"> <img class="w-36" src="../asset/logo.png" alt=""></a>
+            </div>
+            <nav>
+                <button id="toggle-btn" class="block lg:hidden">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <ul id="navbar"
+                    class="hidden shadow-md lg:shadow-none lg:block bg-slate-50 lg:bg-transparent list-none absolute lg:relative text-sm p-5 w-full lg:w-auto left-0 mx-auto top-[85px] lg:top-[0px]">
+                    <li class="block mb-3 lg:inline-block"><a href="#">Home</a></li>
+                    <li class="block mb-3 lg:inline-block"><a href="#">About us</a></li>
+                    <li class="block mb-3 lg:inline-block"><a href="#">Services</a></li>
+                    <li class="block mb-3 lg:inline-block"><a href="#">Pages</a></li>
+                    <li class="block mb-3 lg:inline-block"><a href="#">Contact us</a></li>
+                </ul>
+            </nav>
+            <div class="hidden lg:block">
+                <span class="mr-4 inline-block text-lg"><i class="fa-brands fa-facebook"></i></span>
+                <span class="mr-4 inline-block text-lg"><i class="fa-brands fa-x-twitter"></i></span>
+                <span class="mr-4 inline-block text-lg"><i class="fa-brands fa-youtube"></i></span>
+            </div>
         </div>
-        <nav>
-            <button id="toggle-btn" class="block lg:hidden">
-                <i class="fa-solid fa-bars"></i>
-            </button>
-            <ul id="navbar" class="hidden shadow-md lg:shadow-none lg:block bg-slate-50 lg:bg-transparent list-none absolute lg:relative text-sm p-5 w-full lg:w-auto left-0 mx-auto top-[85px] lg:top-[0px]">
-                <li class="block mb-3 lg:inline-block"><a href="#">Home</a></li>
-                <li class="block mb-3 lg:inline-block"><a href="#">About us</a></li>
-                <li class="block mb-3 lg:inline-block"><a href="#">Services</a></li>
-                <li class="block mb-3 lg:inline-block"><a href="#">Pages</a></li>
-                <li class="block mb-3 lg:inline-block"><a href="#">Contact us</a></li>
-            </ul>
-        </nav>
-        <div class="hidden lg:block">
-            <span class="mr-4 inline-block text-lg"><i class="fa-brands fa-facebook"></i></span>
-            <span class="mr-4 inline-block text-lg"><i class="fa-brands fa-x-twitter"></i></span>
-            <span class="mr-4 inline-block text-lg"><i class="fa-brands fa-youtube"></i></span>
+        <!-- START BANNER SECTION -->
+        <div class="banner bg-bannerBg">
+            <img class="w-full h-[100vh] opacity-5" src="../asset/bg-2.png" alt="">
+            <div>
+                <!-- <h1>Nurse here</h1>
+                <h1>for your health</h1> -->
+            </div>
         </div>
+        <!-- END BANNER SECTION -->
     </header>
     <!-- END HEADER SECTION -->
     <main></main>
