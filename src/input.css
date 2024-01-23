@@ -52,6 +52,7 @@ nav ul li {
     height: 100vh;
     position: relative;
     z-index: -111;
+    background-attachment: fixed;
 }
 .why-choose-nurse::before{
     content: "";
@@ -60,7 +61,10 @@ nav ul li {
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.80);
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.946), rgba(7, 7, 73, 0.78));
     z-index: -11;
-
+}
+.choose-card{
+    background-color: rgb(255 255 255 / 0.05);
+    border-color: rgb(255 255 255 / 0.1);
 }
