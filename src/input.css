@@ -49,12 +49,13 @@ nav ul li {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
+    height: auto;
     position: relative;
     z-index: -111;
     background-attachment: fixed;
 }
-.why-choose-nurse::before{
+
+.why-choose-nurse::before {
     content: "";
     position: absolute;
     left: 0;
@@ -64,7 +65,15 @@ nav ul li {
     background: linear-gradient(to right, rgba(0, 0, 0, 0.946), rgba(7, 7, 73, 0.78));
     z-index: -11;
 }
-.choose-card{
-    background-color: rgb(255 255 255 / 0.05);
-    border-color: rgb(255 255 255 / 0.1);
+
+.choose-card {
+    /* background-color: rgb(255 255 255 / 0.05); */
+    background: linear-gradient(to bottom right, rgba(0, 255, 247, 0.105), rgba(0, 0, 0, 0.333));
+    border-color: rgba(255, 255, 255, 0.1);
+    z-index: 11111;
+}
+
+.choose-card:hover {
+    background-color: blue;
+    z-index: 10000;
 }
