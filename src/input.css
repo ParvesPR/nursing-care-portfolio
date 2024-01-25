@@ -72,8 +72,3 @@ nav ul li {
     border-color: rgba(255, 255, 255, 0.1);
     z-index: 11111;
 }
-
-.choose-card:hover {
-    background-color: blue;
-    z-index: 10000;
-}
