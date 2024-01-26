@@ -72,3 +72,24 @@ nav ul li {
     border-color: rgba(255, 255, 255, 0.1);
     z-index: 11111;
 }
+
+.our-team-card {
+    position: relative;
+    background-image: url(../asset/bg-2.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 11;
+}
+
+.our-team-card::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #121c52db;
+    z-index: -11;
+    border-radius: 12px;
+}
