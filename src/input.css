@@ -73,7 +73,7 @@ nav ul li {
     z-index: 11111;
 }
 
-.our-team-card {
+.our-team-container {
     position: relative;
     background-image: url(../asset/bg-2.png);
     background-position: center center;
@@ -82,7 +82,7 @@ nav ul li {
     z-index: 11;
 }
 
-.our-team-card::before {
+.our-team-container::before {
     content: "";
     position: absolute;
     left: 0;
@@ -92,4 +92,14 @@ nav ul li {
     background-color: #121c52db;
     z-index: -11;
     border-radius: 12px;
+}
+
+.our-team-card {
+    transform-origin: bottom;
+    transition: 0.3s;
+}
+
+.our-team-container:hover .our-team-card {
+    bottom: 30px;
+    opacity: 1;
 }
