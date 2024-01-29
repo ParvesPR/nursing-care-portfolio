@@ -80,6 +80,7 @@ nav ul li {
     background-repeat: no-repeat;
     background-size: cover;
     z-index: 11;
+    transition: 0.3s;
 }
 
 .our-team-container::before {
@@ -102,4 +103,14 @@ nav ul li {
 .our-team-container:hover .our-team-card {
     bottom: 30px;
     opacity: 1;
+}
+
+.our-team-container .our-team-card a {
+    transition: ease-in-out 0.3s;
+}
+
+.our-team-container .our-team-card a:hover {
+    transform: scale(1.1);
+    background: #121C52;
+    color: white;
 }
