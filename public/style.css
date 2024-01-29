@@ -1304,8 +1304,16 @@ nav ul li {
     border-right-width: 2px;
   }
 
+  .lg\:border-none {
+    border-style: none;
+  }
+
   .lg\:bg-transparent {
     background-color: transparent;
+  }
+
+  .lg\:p-0 {
+    padding: 0px;
   }
 
   .lg\:px-12 {
