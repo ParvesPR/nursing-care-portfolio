@@ -114,3 +114,10 @@ nav ul li {
     background: #121C52;
     color: white;
 }
+.footer{
+    position: relative;
+    background-image: url(../asset/bg-2.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
