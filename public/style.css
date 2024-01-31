@@ -747,12 +747,12 @@ video {
   height: auto;
 }
 
-.h-screen {
-  height: 100vh;
-}
-
 .h-full {
   height: 100%;
+}
+
+.h-screen {
+  height: 100vh;
 }
 
 .w-1\/2 {
@@ -801,10 +801,6 @@ video {
 
 .grid-cols-1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
-}
-
-.grid-cols-2 {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .flex-wrap {
@@ -968,11 +964,6 @@ video {
 
 .bg-no-repeat {
   background-repeat: no-repeat;
-}
-
-.object-contain {
-  -o-object-fit: contain;
-     object-fit: contain;
 }
 
 .object-cover {
@@ -1215,7 +1206,7 @@ nav ul li {
 }
 
 .banner-img {
-  background-image: url(../asset/bg-2.png);
+  background-image: url(./asset/bg-2.png);
 }
 
 .banner-img-sec::before {
@@ -1227,19 +1218,19 @@ nav ul li {
   top: 0;
   width: 100%;
   height: 100%;
-  background: rgba(255, 255, 255, 0.74);
+  background: rgba(4, 4, 4, 0.677);
   overflow: hidden;
   z-index: -111111;
 }
 
 .banner-img-sec {
-  background-image: url(../asset/home_healthcare.jpg);
+  background-image: url(./asset/home_healthcare.jpg);
   position: relative;
   z-index: -111;
 }
 
 .why-choose-nurse {
-  background: url(../asset/why-choose.jpg);
+  background: url(./asset/why-choose.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1269,7 +1260,7 @@ nav ul li {
 
 .our-team-container {
   position: relative;
-  background-image: url(../asset/bg-2.png);
+  background-image: url(./asset/bg-2.png);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1322,7 +1313,7 @@ nav ul li {
 
 .footer {
   position: relative;
-  background-image: url(../asset/footer-bg.jpg);
+  background-image: url(./asset/footer-bg.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1348,6 +1339,10 @@ nav ul li {
 @media (min-width: 768px) {
   .md\:mb-1 {
     margin-bottom: 0.25rem;
+  }
+
+  .md\:block {
+    display: block;
   }
 
   .md\:h-20 {
