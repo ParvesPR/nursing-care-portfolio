@@ -16,26 +16,15 @@ nav ul li {
 }
 
 .banner-img-sec::before {
-    contain: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #181818;
-    z-index: 11;
-}
-
-.banner-img-sec::before {
     content: "";
     position: absolute;
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
-    background: #181818;
-    overflow: hidden;
-    z-index: -111111;
+    background-color: #181818;
+    opacity: 0.8;
+    z-index: -111;
 }
 
 .banner-img-sec {
